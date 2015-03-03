@@ -14,14 +14,10 @@ Platform assembly: C:\Users\Ethan\Documents\School\I495\Oculus_Project\test_Data
 Loading C:\Users\Ethan\Documents\School\I495\Oculus_Project\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\Ethan\Documents\School\I495\Oculus_Project\test_Data\Managed\LeapCSharp.NET3.5.dll (this message is harmless)
 Loading C:\Users\Ethan\Documents\School\I495\Oculus_Project\test_Data\Managed\LeapCSharp.NET3.5.dll into Unity Child Domain
-- Completed reload, in  0.043 seconds
+- Completed reload, in  0.076 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 Platform assembly: C:\Users\Ethan\Documents\School\I495\Oculus_Project\test_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Ethan\Documents\School\I495\Oculus_Project\test_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 0.722050 ms
-OVRMainMenu: No OVRPlayerController attached.
- 
-(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
-
+UnloadTime: 0.702727 ms
