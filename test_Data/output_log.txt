@@ -2,205 +2,38 @@ Initialize engine version: 4.6.2f1 (bd99309c2ad7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 680 (ID=0x1180)
-    Vendor:   NVIDIA
-    VRAM:     3072 MB
+    Renderer: AMD Radeon HD 8400 (ID=0x9830)
+    Vendor:   ATI
+    VRAM:     495 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\LeapCSharp.NET3.5.dll (this message is harmless)
-Loading C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\LeapCSharp.NET3.5.dll into Unity Child Domain
-- Completed reload, in  0.050 seconds
+Platform assembly: C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\LeapCSharp.NET3.5.dll (this message is harmless)
+Loading C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\LeapCSharp.NET3.5.dll into Unity Child Domain
+- Completed reload, in  0.162 seconds
 <RI> Initializing input.
-XInput1_3.dll not found.
 <RI> Input initialized.
-desktop: 1920x1200 59Hz; virtual: 3840x1200 at 0,0
-Platform assembly: C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\eascheld\Documents\GitHub\Oculus_Project\test_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 0.881392 ms
+desktop: 1920x1080 60Hz; virtual: 3520x1080 at 0,0
+Platform assembly: C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Justin\Documents\Oculus_Project\Test_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 2.525817 ms
 NullReferenceException: Object reference not set to an instance of an object
   at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
   at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
 NullReferenceException: Object reference not set to an instance of an object
   at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
@@ -8470,101 +8303,69 @@ NullReferenceException: Object reference not set to an instance of an object
  
 (Filename:  Line: -1)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
-  at GrabbingHand.FixedUpdate () [0x00000] in <filename unknown>:0 
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
-(Filename:  Line: -1)
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
 
 NullReferenceException: Object reference not set to an instance of an object
   at GrabbingHand.UpdatePalmRotation () [0x00000] in <filename unknown>:0 
