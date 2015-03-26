@@ -47,6 +47,7 @@ public class GrabbingHand : MonoBehaviour {
   // Clamps the movement of the grabbed object.
   public Vector3 maxMovement = new Vector3(Mathf.Infinity, Mathf.Infinity, Mathf.Infinity);
   public Vector3 minMovement = new Vector3(-Mathf.Infinity, -Mathf.Infinity, -Mathf.Infinity);
+  public GameObject LargeCube;
 
   protected PinchState pinch_state_;
   protected Collider active_object_;
@@ -122,8 +123,9 @@ public class GrabbingHand : MonoBehaviour {
 
   protected void StartPinch() {
     // Only pinch if we're hovering over an object.
-    if (active_object_ == null)
-      return;
+    if (active_object_ == null) {
+        return;
+    }
 
     HandModel hand_model = GetComponent<HandModel>();
     Leap.Utils.IgnoreCollisions(gameObject, active_object_.gameObject, true);
