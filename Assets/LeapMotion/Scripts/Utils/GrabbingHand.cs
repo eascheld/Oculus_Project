@@ -47,7 +47,6 @@ public class GrabbingHand : MonoBehaviour {
   // Clamps the movement of the grabbed object.
   public Vector3 maxMovement = new Vector3(Mathf.Infinity, Mathf.Infinity, Mathf.Infinity);
   public Vector3 minMovement = new Vector3(-Mathf.Infinity, -Mathf.Infinity, -Mathf.Infinity);
-  public GameObject LargeCube;
 
   protected PinchState pinch_state_;
   protected Collider active_object_;
