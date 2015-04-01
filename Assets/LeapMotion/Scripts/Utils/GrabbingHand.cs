@@ -189,7 +189,7 @@ public class GrabbingHand : MonoBehaviour {
         grabbable.OnRelease();
 
       if (grabbable == null || grabbable.rotateQuickly)
-        active_object_.rigidbody.maxAngularVelocity = last_max_angular_velocity_;
+          active_object_.rigidbody.maxAngularVelocity = last_max_angular_velocity_;
 
       Leap.Utils.IgnoreCollisions(gameObject, active_object_.gameObject, false);
     }
@@ -290,6 +290,8 @@ public class GrabbingHand : MonoBehaviour {
 
     float strength = (releaseBreakDistance - delta_position.magnitude) / releaseBreakDistance;
     strength = releaseStrengthCurve.Evaluate(strength);
+    //active_object_.rigidbody.constraints &= ~RigidbodyConstraints.FreezePositionX;
+    //active_object_.rigidbody.constraints &= ~RigidbodyConstraints.FreezePositionY;
     active_object_.rigidbody.AddForce(delta_position.normalized * strength * positionFiltering,
                                       ForceMode.Acceleration);
 
