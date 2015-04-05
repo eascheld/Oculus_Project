@@ -79,7 +79,7 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>C:/Users/vanwinne/Documents/GitHub/Oculus Project 2.2/Oculus_Project/Assets/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>C:/Users/eascheld/Documents/GitHub/Oculus_Project/Assets/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
