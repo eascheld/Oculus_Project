@@ -290,8 +290,6 @@ public class GrabbingHand : MonoBehaviour {
 
     float strength = (releaseBreakDistance - delta_position.magnitude) / releaseBreakDistance;
     strength = releaseStrengthCurve.Evaluate(strength);
-    //active_object_.rigidbody.constraints &= ~RigidbodyConstraints.FreezePositionX;
-    //active_object_.rigidbody.constraints &= ~RigidbodyConstraints.FreezePositionY;
     active_object_.rigidbody.AddForce(delta_position.normalized * strength * positionFiltering,
                                       ForceMode.Acceleration);
 
