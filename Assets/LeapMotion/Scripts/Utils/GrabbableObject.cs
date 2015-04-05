@@ -44,7 +44,8 @@ public class GrabbableObject : MonoBehaviour {
     hovered_ = false;
 
     //Release GameObject position lock
-    //rigidbody.constraints = RigidbodyConstraints.None;
+    rigidbody.constraints = RigidbodyConstraints.None;
+    rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
 
     if (breakableJoint != null) {
       Joint breakJoint = breakableJoint.GetComponent<Joint>();
@@ -59,8 +60,7 @@ public class GrabbableObject : MonoBehaviour {
     grabbed_ = false;
 
     //Lock GameObject to position
-    //rigidbody.constraints = RigidbodyConstraints.FreezePositionX;
-    //rigidbody.constraints = RigidbodyConstraints.FreezePositionZ;
+    rigidbody.constraints = RigidbodyConstraints.FreezeAll;
 
     if (breakableJoint != null) {
       Joint breakJoint = breakableJoint.GetComponent<Joint>();
