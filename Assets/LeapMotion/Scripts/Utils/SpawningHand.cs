@@ -5,30 +5,42 @@ using Leap;
 // Leap Motion hand script that detects shape gestures and spawns the appropriate GameObject
 class SpawningHand : MonoBehaviour
 {
+    public GameObject spawnCube;
     private Controller controller;
     private Frame frame;
 
     void Start()
     {
         controller = new Controller();
-        controller.EnableGesture(Gesture.GestureType.TYPE_CIRCLE);
+        if (controller == null)
+        {
+            Debug.LogWarning("Cannot connect to controller. Make sure you have Leap Motion v2.0+ installed.");
+        }
+        else
+        {
+            controller.EnableGesture(Gesture.GestureType.TYPE_CIRCLE);
+        }
+        
     }
 
     void Update()
     {
         frame = controller.Frame();
-        foreach (Gesture gesture in frame.Gestures())
-        {
-            switch (gesture.Type)
+        if (frame.Gestures().Count > 0) {
+            foreach (Gesture gesture in frame.Gestures())
             {
-                case(Gesture.GestureType.TYPE_CIRCLE):
-                { 
-                    //Code
-                    break;
-                }
-                default:
+                switch (gesture.Type)
                 {
-                    break;
+                    case(Gesture.GestureType.TYPE_CIRCLE):
+                    {
+                        Debug.Log("Got a circle gesture!");
+                        Instantiate(spawnCube);
+                        break;
+                    }
+                    default:
+                    {
+                        break;
+                    }
                 }
             }
         }
