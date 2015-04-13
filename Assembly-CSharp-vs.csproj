@@ -119,6 +119,7 @@
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Button\ButtonToggleBase.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\DemoScripts\ButtonDemoGraphics.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\DemoScripts\ButtonDemoToggle.cs" />
+     <Compile Include="Assets\LeapMotion\Widgets\Scripts\DemoScripts\PrimarySliderDemoVanessa.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\DemoScripts\ScrollTextDemo.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\DemoScripts\SliderDemo.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\DemoScripts\SliderDemoGraphics.cs" />
@@ -134,6 +135,7 @@
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Physics\LeapPhysicsBase.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Physics\LeapPhysicsSpring.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Scroll\ScrollTextBase.cs" />
+     <Compile Include="Assets\LeapMotion\Widgets\Scripts\Slider\PrimarySliderBase.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Slider\SliderBase.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Utils\ExponentialSmoothing.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
@@ -176,7 +178,11 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
+<<<<<<< .merge_file_a07372
  <HintPath>C:/Users/Justin/Documents/Oculus_Project/Assets/LeapCSharp.NET3.5.dll</HintPath>
+=======
+ <HintPath>C:/Users/vanwinne/Documents/GitHub/Oculus_Project/Assets/LeapCSharp.NET3.5.dll</HintPath>
+>>>>>>> .merge_file_a08228
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

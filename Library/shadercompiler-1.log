@@ -1,3 +1,7 @@
 Base path: C:/Program Files (x86)/Unity/Editor/Data
+<<<<<<< .merge_file_a09620
 Pipe name: \\.\pipe\UnityShaderCompiler-1-3136
+=======
+Pipe name: \\.\pipe\UnityShaderCompiler-1-2600
+>>>>>>> .merge_file_a03228
 Cmd: getPlatforms
