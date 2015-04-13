@@ -5,10 +5,7 @@ using Leap;
 // Leap Motion hand script that detects shape gestures and spawns the appropriate GameObject
 class SpawningHand : HandController
 {
-    //public GameObject spawnCube;
     private Frame frame;
-    private bool spawned;
-    private int numSpawned = 0;
 
     void Start()
     {
@@ -40,21 +37,31 @@ class SpawningHand : HandController
             {
                 case(Gesture.GestureType.TYPE_CIRCLE):
                 {
-                    if (!spawned && numSpawned == 0)
+                    if (gesture.State == Gesture.GestureState.STATE_STOP)
                     {
-                        Debug.Log("Got a circle gesture!");
                         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                        numSpawned++;
-                        //CircleGesture theCircle = new CircleGesture(frame.Gestures()[0]); // new CircleGesture();
-                        //Leap.Vector v = theCircle.Center;
+                        CircleGesture theCircle = new CircleGesture(frame.Gestures()[0]); // new CircleGesture();
+                        Leap.Vector cCenter = theCircle.Center;
+
+                        //float cCenterX = -1*Mathf.Round(cCenter.x);
+                        //Debug.Log("cCenterX = " + cCenterX);
+                        //cCenterX = cCenterX / 1000;
+                        //Debug.Log("cCenterX/1000 = " + cCenterX);
+                        //float cCenterY = Mathf.Round(cCenter.y);
+                        //Debug.Log("cCenterY = " + cCenterY);
+                        //cCenterY = cCenterY / 1000;
+                        //Debug.Log("cCenterY/1000 = " + cCenterY);
+                        //float cCenterZ = -1*Mathf.Round(cCenter.z);
+                        //Debug.Log("cCenterZ = " + cCenterZ);
+                        //cCenterZ = cCenterZ / 1000;
+                        //Debug.Log("cCenterZ/1000 = " + cCenterZ);
+
                         cube.transform.localScale = new Vector3(1, 1, 1);
-                        cube.transform.position = new Vector3(0, 0.5f, 0);
+                        cube.transform.position = new Vector3(1, 1, 1); //cCenterX, cCenterY, cCenterZ);
                         cube.AddComponent<GrabbableObject>();
                         cube.AddComponent<Rigidbody>();
                         cube.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
                         cube.transform.renderer.materials[0].color = Color.blue;
-                        spawned = true;
-                        Debug.Log("Number Spawned: " + numSpawned);
                     }
                     break;
                 }
@@ -64,10 +71,5 @@ class SpawningHand : HandController
                 }
             }
         }
-    }
-
-    void FixedUpdate()
-    {
-        //spawned = false;
     }
 }
