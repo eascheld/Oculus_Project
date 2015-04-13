@@ -59,6 +59,13 @@ public class GrabbableObject : MonoBehaviour {
   public virtual void OnRelease() {
     grabbed_ = false;
 
+    Vector3 newPos = rigidbody.transform.position;
+
+    newPos.x = Mathf.Round(newPos.x);
+    newPos.y = Mathf.Round(newPos.y);
+    newPos.z = Mathf.Round(newPos.z);
+
+    transform.position = newPos;
     //Lock GameObject to position
     rigidbody.constraints = RigidbodyConstraints.FreezeAll;
 
@@ -69,5 +76,8 @@ public class GrabbableObject : MonoBehaviour {
         breakJoint.breakTorque = Mathf.Infinity;
       }
     }
+
+   
+
   }
 }
