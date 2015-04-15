@@ -79,11 +79,7 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
-<<<<<<< .merge_file_a10640
- <HintPath>C:/Users/Justin/Documents/Oculus_Project/Assets/LeapCSharp.NET3.5.dll</HintPath>
-=======
  <HintPath>C:/Users/vanwinne/Documents/GitHub/Oculus_Project/Assets/LeapCSharp.NET3.5.dll</HintPath>
->>>>>>> .merge_file_a06668
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

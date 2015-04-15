@@ -6,6 +6,7 @@ using Leap;
 class SpawningHand : HandController
 {
     private Frame frame;
+    public GameObject UICanvas;
 
     void Start()
     {
@@ -16,7 +17,8 @@ class SpawningHand : HandController
         else
         {
             leap_controller_.EnableGesture(Gesture.GestureType.TYPE_CIRCLE);
-            leap_controller_.Config.SetFloat("Gesture.Circle.MinRadius", 10.0f);
+            leap_controller_.EnableGesture(Gesture.GestureType.TYPE_SWIPE);
+            //leap_controller_.Config.SetFloat("Gesture.Circle.MinRadius", 10.0f);
             //leap_controller_.Config.SetFloat("Gesture.Circle.MinArc", 2.0f*Mathf.PI);
             leap_controller_.Config.Save();
         }
@@ -65,6 +67,26 @@ class SpawningHand : HandController
                     }
                     break;
                 }
+                case(Gesture.GestureType.TYPE_SWIPE):
+                {
+                    Debug.Log("Did the swipe gesture swipe?");
+                    if (gesture.State == Gesture.GestureState.STATE_STOP)
+                    {
+                        Debug.Log("Did the swipe gesture swipe?");
+                        if (UICanvas.activeSelf)
+                        { 
+                            UICanvas.SetActive(false);
+                        }
+                        else
+                        {
+                            UICanvas.SetActive(true);
+                        }
+                        
+                    }
+                    break;
+                }
+
+            
                 default:
                 {
                     break;

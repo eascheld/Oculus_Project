@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SliderDemoGraphics : MonoBehaviour
 {
+
   public void SetActive(bool status)
   {
     Renderer[] renderers = GetComponentsInChildren<Renderer>();

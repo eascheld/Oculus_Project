@@ -21,6 +21,9 @@ public class SliderDemo : SliderBase
 	
   private List<GameObject> dots = new List<GameObject>();
 
+  public GameObject redVal;
+  public SliderToTextDataBinder sToTDB;
+
   protected override void sliderPressed()
   {
     base.sliderPressed();
@@ -72,6 +75,8 @@ public class SliderDemo : SliderBase
     }
     if (numberOfDots > 0)
     {
+        sToTDB.SetCurrentData(redVal.guiText); 
+    
       UpdateDots();
     }
   }
