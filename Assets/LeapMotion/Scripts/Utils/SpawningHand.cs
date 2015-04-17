@@ -20,9 +20,9 @@ class SpawningHand : HandController
         {
             leap_controller_.EnableGesture(Gesture.GestureType.TYPE_CIRCLE);
             leap_controller_.EnableGesture(Gesture.GestureType.TYPE_SWIPE);
-            //leap_controller_.Config.SetFloat("Gesture.Circle.MinRadius", 10.0f);
-            //leap_controller_.Config.SetFloat("Gesture.Circle.MinArc", 2.0f*Mathf.PI);
-            //leap_controller_.Config.Save();
+            leap_controller_.Config.SetFloat("Gesture.Circle.MinRadius", 15.0f);
+            leap_controller_.Config.SetFloat("Gesture.Circle.MinArc", 2.0f*Mathf.PI);
+            leap_controller_.Config.Save();
         }
         
     }
@@ -45,15 +45,18 @@ class SpawningHand : HandController
                     {
                         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                         CircleGesture theCircle = new CircleGesture(frame.Gestures()[0]); // new CircleGesture();
-                        Leap.Vector cCenter = leapToWorld(theCircle.Center, iBox);
+                        //Leap.Vector cCenter = leapToWorld(theCircle.Center, iBox);
 
                         cube.transform.parent = spawnAnchor.transform;
-                        float cCenterX = Mathf.Round(cCenter.x);
-                        float cCenterY = Mathf.Round(cCenter.y) + 1;
-                        float cCenterZ = Mathf.Round(cCenter.z);
+                        //float cCenterX = Mathf.Round(cCenter.x);
+                        //Debug.Log("cCenterX = " + cCenterX);
+                        //float cCenterY = Mathf.Round(cCenter.y);
+                        //Debug.Log("cCenterY = " + cCenterY);
+                        //float cCenterZ = Mathf.Round(cCenter.z);
+                        //Debug.Log("cCenterZ = " + cCenterZ);
 
                         cube.transform.localScale = new Vector3(1, 1, 1);
-                        cube.transform.localPosition = new Vector3(cCenterX, cCenterY, cCenterZ);
+                        cube.transform.localPosition = new Vector3(0, 0.5f, 0);
                         cube.AddComponent<GrabbableObject>();
                         cube.AddComponent<Rigidbody>();
                         cube.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
@@ -94,7 +97,7 @@ class SpawningHand : HandController
     {
         leapPoint.z *= -1.0f; //right-hand to left-hand rule
         Leap.Vector normalized = iBox.NormalizePoint(leapPoint, false);
-        normalized += new Leap.Vector(0.5f, 0f, 0.5f); //recenter origin
+        //normalized += new Leap.Vector(0.5f, 0f, 0.5f); //recenter origin
         return normalized * 100.0f; //scale
     }
 }

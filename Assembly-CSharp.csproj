@@ -46,6 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Colors\ColorBlue.cs" />
+     <Compile Include="Assets\Colors\ColorGreen.cs" />
+     <Compile Include="Assets\Colors\ColorOrange.cs" />
+     <Compile Include="Assets\Colors\ColorPurple.cs" />
+     <Compile Include="Assets\Colors\ColorRed.cs" />
+     <Compile Include="Assets\Colors\ColorYellow.cs" />
      <Compile Include="Assets\LeapMotion+OVR\DemoResources\Scripts\BlocksPlaneGenerator.cs" />
      <Compile Include="Assets\LeapMotion+OVR\DemoResources\Scripts\MovementManager.cs" />
      <Compile Include="Assets\LeapMotion+OVR\DemoResources\Scripts\RandomBlocksGenerator.cs" />
