@@ -7,6 +7,8 @@ class SpawningHand : HandController
 {
     private Frame frame;
     public GameObject UICanvas;
+    public GameObject spawnAnchor;
+    public InteractionBox iBox;
 
     void Start()
     {
@@ -20,7 +22,7 @@ class SpawningHand : HandController
             leap_controller_.EnableGesture(Gesture.GestureType.TYPE_SWIPE);
             //leap_controller_.Config.SetFloat("Gesture.Circle.MinRadius", 10.0f);
             //leap_controller_.Config.SetFloat("Gesture.Circle.MinArc", 2.0f*Mathf.PI);
-            leap_controller_.Config.Save();
+            //leap_controller_.Config.Save();
         }
         
     }
@@ -43,27 +45,20 @@ class SpawningHand : HandController
                     {
                         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                         CircleGesture theCircle = new CircleGesture(frame.Gestures()[0]); // new CircleGesture();
-                        Leap.Vector cCenter = theCircle.Center;
+                        Leap.Vector cCenter = leapToWorld(theCircle.Center, iBox);
 
-                        //float cCenterX = -1*Mathf.Round(cCenter.x);
-                        //Debug.Log("cCenterX = " + cCenterX);
-                        //cCenterX = cCenterX / 1000;
-                        //Debug.Log("cCenterX/1000 = " + cCenterX);
-                        //float cCenterY = Mathf.Round(cCenter.y);
-                        //Debug.Log("cCenterY = " + cCenterY);
-                        //cCenterY = cCenterY / 1000;
-                        //Debug.Log("cCenterY/1000 = " + cCenterY);
-                        //float cCenterZ = -1*Mathf.Round(cCenter.z);
-                        //Debug.Log("cCenterZ = " + cCenterZ);
-                        //cCenterZ = cCenterZ / 1000;
-                        //Debug.Log("cCenterZ/1000 = " + cCenterZ);
+                        cube.transform.parent = spawnAnchor.transform;
+                        float cCenterX = Mathf.Round(cCenter.x);
+                        float cCenterY = Mathf.Round(cCenter.y) + 1;
+                        float cCenterZ = Mathf.Round(cCenter.z);
 
                         cube.transform.localScale = new Vector3(1, 1, 1);
-                        cube.transform.position = new Vector3(1, 1, 1); //cCenterX, cCenterY, cCenterZ);
+                        cube.transform.localPosition = new Vector3(cCenterX, cCenterY, cCenterZ);
                         cube.AddComponent<GrabbableObject>();
                         cube.AddComponent<Rigidbody>();
                         cube.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
                         cube.transform.renderer.materials[0].color = Color.blue;
+                        cube.transform.parent = null;
                     }
                     break;
                 }
@@ -93,5 +88,13 @@ class SpawningHand : HandController
                 }
             }
         }
+    }
+
+    Leap.Vector leapToWorld(Leap.Vector leapPoint, InteractionBox iBox)
+    {
+        leapPoint.z *= -1.0f; //right-hand to left-hand rule
+        Leap.Vector normalized = iBox.NormalizePoint(leapPoint, false);
+        normalized += new Leap.Vector(0.5f, 0f, 0.5f); //recenter origin
+        return normalized * 100.0f; //scale
     }
 }

@@ -75,7 +75,7 @@ public class SliderDemo : SliderBase
     }
     if (numberOfDots > 0)
     {
-        sToTDB.SetCurrentData(redVal.guiText); 
+        //sToTDB.SetCurrentData(redVal.guiText); 
     
       UpdateDots();
     }
