@@ -2,6 +2,8 @@
 using System.Collections;
 using Leap;
 
+
+
 // Leap Motion hand script that detects shape gestures and spawns the appropriate GameObject
 class SpawningHand : HandController
 {
@@ -9,6 +11,7 @@ class SpawningHand : HandController
     public GameObject UICanvas;
     public GameObject spawnAnchor;
     public InteractionBox iBox;
+
 
     void Start()
     {
@@ -20,6 +23,8 @@ class SpawningHand : HandController
         {
             leap_controller_.EnableGesture(Gesture.GestureType.TYPE_CIRCLE);
             leap_controller_.EnableGesture(Gesture.GestureType.TYPE_SWIPE);
+            leap_controller_.Config.SetFloat("Gesture.Swipe.MinVelocity", 100f);
+            leap_controller_.Config.SetFloat("Gesture.Swipe.MinLength", 50f);
             leap_controller_.Config.SetFloat("Gesture.Circle.MinRadius", 15.0f);
             leap_controller_.Config.SetFloat("Gesture.Circle.MinArc", 2.0f*Mathf.PI);
             leap_controller_.Config.Save();
@@ -67,9 +72,11 @@ class SpawningHand : HandController
                 }
                 case(Gesture.GestureType.TYPE_SWIPE):
                 {
-                    Debug.Log("Did the swipe gesture swipe?");
+                    //Debug.Log("Did the swipe gesture swipe?");
                     if (gesture.State == Gesture.GestureState.STATE_STOP)
                     {
+
+                      
                         Debug.Log("Did the swipe gesture swipe?");
                         if (UICanvas.activeSelf)
                         { 

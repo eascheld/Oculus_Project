@@ -6,6 +6,7 @@ public class ButtonDemoToggle : ButtonToggleBase
 {
   public ButtonDemoGraphics onGraphics;
   public ButtonDemoGraphics offGraphics;
+  public GameObject UICanvas;
   public ButtonDemoGraphics midGraphics;
   public ButtonDemoGraphics botGraphics;
   
@@ -13,11 +14,11 @@ public class ButtonDemoToggle : ButtonToggleBase
   public Color BotGraphicsOnColor = new Color(0.0f, 1.0f, 1.0f, 1.0f);
   public Color MidGraphicsOffColor = new Color(0.0f, 0.5f, 0.5f, 0.1f);
   public Color BotGraphicsOffColor = new Color(0.0f, 0.25f, 0.25f, 1.0f);
-	
+
 
   public override void ButtonTurnsOn()
   {
-    TurnsOnGraphics();
+      TurnsOnGraphics();
   }
 
   public override void ButtonTurnsOff()
@@ -27,18 +28,19 @@ public class ButtonDemoToggle : ButtonToggleBase
 
   private void TurnsOnGraphics()
   {
-    onGraphics.SetActive(true);
-    offGraphics.SetActive(false);
-	midGraphics.SetColor(MidGraphicsOnColor);
-	botGraphics.SetColor(BotGraphicsOnColor);
+      onGraphics.SetActive(true);
+      offGraphics.SetActive(false);
+      UICanvas.SetActive(false);
+      midGraphics.SetColor(MidGraphicsOnColor);
+      botGraphics.SetColor(BotGraphicsOnColor);
   }
 
   private void TurnsOffGraphics()
   {
-    onGraphics.SetActive(false);
+      onGraphics.SetActive(false);
     offGraphics.SetActive(true);
-	midGraphics.SetColor(MidGraphicsOffColor);
-	botGraphics.SetColor(BotGraphicsOffColor);
+    midGraphics.SetColor(MidGraphicsOffColor);
+    botGraphics.SetColor(BotGraphicsOffColor);
   }
 
   private void UpdateGraphics()
