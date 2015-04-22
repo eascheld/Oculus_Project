@@ -92,8 +92,8 @@ public class HandController : MonoBehaviour {
     {
         leap_controller_.EnableGesture(Gesture.GestureType.TYPE_CIRCLE);
         leap_controller_.EnableGesture(Gesture.GestureType.TYPE_SWIPE);
-        leap_controller_.Config.SetFloat("Gesture.Swipe.MinVelocity", 100f);
-        leap_controller_.Config.SetFloat("Gesture.Swipe.MinLength", 50f);
+        leap_controller_.Config.SetFloat("Gesture.Swipe.MinVelocity", 1000f);
+        leap_controller_.Config.SetFloat("Gesture.Swipe.MinLength", 150f);
         leap_controller_.Config.SetFloat("Gesture.Circle.MinRadius", 15.0f);
         leap_controller_.Config.SetFloat("Gesture.Circle.MinArc", 2.0f * Mathf.PI);
         leap_controller_.Config.Save();
@@ -304,7 +304,7 @@ public class HandController : MonoBehaviour {
                 //float cCenterZ = Mathf.Round(cCenter.z);
                 //Debug.Log("cCenterZ = " + cCenterZ);
 
-                cylinder.transform.localScale = new Vector3(1, 1, 1);
+                cylinder.transform.localScale = new Vector3(1, 0.5f, 1);
                 cylinder.transform.localPosition = new Vector3(0, 0.5f, 0);
                 cylinder.AddComponent<GrabbableObject>();
                 cylinder.AddComponent<Rigidbody>();
