@@ -60,7 +60,6 @@
      <None Include="Assets\Plugins\x86_64\donotdelete.txt" />
      <None Include="Assets\LeapMotion\InteractionUtils (alpha)\readme.txt" />
      <None Include="Assets\LeapMotion\Resources\LeapIRUndistorted_foreground.shader" />
-     <None Include="Assets\LeapMotion\DemoResources\ScrollerText.txt" />
      <None Include="Assets\LeapMotion\readme.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
