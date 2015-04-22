@@ -130,6 +130,20 @@ public class HandControllerEditor : Editor {
 
     EditorGUILayout.Space();
 
+    controller.UICanvas = (GameObject)EditorGUILayout.ObjectField("UI Canvas",
+                                             controller.UICanvas,
+                                             typeof(GameObject), true);
+
+    controller.spawnAnchor = (GameObject)EditorGUILayout.ObjectField("Spawn Anchor",
+                                           controller.spawnAnchor,
+                                           typeof(GameObject), true);
+
+    controller.spawnObject = (ObjectToSpawn)EditorGUILayout.ObjectField("Spawn Object",
+                                           controller.spawnObject,
+                                           typeof(ObjectToSpawn), true);
+
+    EditorGUILayout.Space();
+
     controller.isHeadMounted = EditorGUILayout.Toggle("Is Head Mounted",
                                                       controller.isHeadMounted);
 
