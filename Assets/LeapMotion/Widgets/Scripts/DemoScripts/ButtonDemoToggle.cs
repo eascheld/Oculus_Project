@@ -49,6 +49,10 @@ public class ButtonDemoToggle : ButtonToggleBase
       {
           shapeChosen.text = "cube";
       }
+      else if (buttonPressed.text == "sphere")
+      {
+          shapeChosen.text = "sphere";
+      }
       else
       {
           Debug.Log("Button Press Failure!");

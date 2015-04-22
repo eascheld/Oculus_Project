@@ -62,7 +62,7 @@ public class GrabbableObject : MonoBehaviour {
     Vector3 newPos = rigidbody.transform.position;
 
     newPos.x = Mathf.Round(newPos.x);
-    newPos.y = Mathf.Round(newPos.y);
+    newPos.y = Mathf.Round(newPos.y) + 0.5f;
     newPos.z = Mathf.Round(newPos.z);
 
     transform.position = newPos;
