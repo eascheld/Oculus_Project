@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CloseUI.cs" />
+     <Compile Include="Assets\ColorChanger.cs" />
      <Compile Include="Assets\Colors\ColorBlue.cs" />
      <Compile Include="Assets\Colors\ColorGreen.cs" />
      <Compile Include="Assets\Colors\ColorOrange.cs" />
@@ -162,6 +163,7 @@
      <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\Util\OVRVisionGuide.cs" />
+     <Compile Include="Assets\ObjectToSpawn.cs" />
      <None Include="Assets\LeapMotion\Resources\LeapIRUndistorted.shader" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\LeapMotion\Materials\Sources\Shaders\Toony-Basic.shader" />
@@ -186,7 +188,7 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="LeapCSharp.NET3.5">
- <HintPath>C:/Users/Justin/Documents/Oculus_Project/Assets/LeapCSharp.NET3.5.dll</HintPath>
+ <HintPath>C:/Users/eascheld/Documents/GitHub/Oculus_Project/Assets/LeapCSharp.NET3.5.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

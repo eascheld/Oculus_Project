@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using Leap;
 
 
 
-// Leap Motion hand script that detects shape gestures and spawns the appropriate GameObject
+/* Leap Motion hand script that detects gestures and executes the appropriate actions */
 class SpawningHand : HandController
 {
     private Frame frame;
     public GameObject UICanvas;
     public GameObject spawnAnchor;
     public InteractionBox iBox;
+    public ObjectToSpawn spawnObject;
+    
 
 
     void Start()
@@ -44,40 +47,61 @@ class SpawningHand : HandController
         {
             switch (gesture.Type)
             {
-                case(Gesture.GestureType.TYPE_CIRCLE):
+                case(Gesture.GestureType.TYPE_CIRCLE): //Spawn GameObject
                 {
                     if (gesture.State == Gesture.GestureState.STATE_STOP)
                     {
-                        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                        CircleGesture theCircle = new CircleGesture(frame.Gestures()[0]); // new CircleGesture();
-                        //Leap.Vector cCenter = leapToWorld(theCircle.Center, iBox);
+                        if (spawnObject.shape.text == "cube")
+                        {
+                            GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                            CircleGesture theCircle = new CircleGesture(frame.Gestures()[0]); // new CircleGesture();
+                            //Leap.Vector cCenter = leapToWorld(theCircle.Center, iBox);
 
-                        cube.transform.parent = spawnAnchor.transform;
-                        //float cCenterX = Mathf.Round(cCenter.x);
-                        //Debug.Log("cCenterX = " + cCenterX);
-                        //float cCenterY = Mathf.Round(cCenter.y);
-                        //Debug.Log("cCenterY = " + cCenterY);
-                        //float cCenterZ = Mathf.Round(cCenter.z);
-                        //Debug.Log("cCenterZ = " + cCenterZ);
+                            cube.transform.parent = spawnAnchor.transform;
+                            //float cCenterX = Mathf.Round(cCenter.x);
+                            //Debug.Log("cCenterX = " + cCenterX);
+                            //float cCenterY = Mathf.Round(cCenter.y);
+                            //Debug.Log("cCenterY = " + cCenterY);
+                            //float cCenterZ = Mathf.Round(cCenter.z);
+                            //Debug.Log("cCenterZ = " + cCenterZ);
 
-                        cube.transform.localScale = new Vector3(1, 1, 1);
-                        cube.transform.localPosition = new Vector3(0, 0.5f, 0);
-                        cube.AddComponent<GrabbableObject>();
-                        cube.AddComponent<Rigidbody>();
-                        cube.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
-                        cube.transform.renderer.materials[0].color = Color.blue;
-                        cube.transform.parent = null;
+                            cube.transform.localScale = new Vector3(1, 1, 1);
+                            cube.transform.localPosition = new Vector3(0, 0.5f, 0);
+                            cube.AddComponent<GrabbableObject>();
+                            cube.AddComponent<Rigidbody>();
+                            cube.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                            cube.transform.renderer.material.color = new Color32(spawnObject.red, spawnObject.green, spawnObject.blue, 1);
+                            cube.transform.parent = null;
+                        }
+                        else if(spawnObject.shape.text == "cylinder")
+                        {
+                            GameObject cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+                            CircleGesture theCircle = new CircleGesture(frame.Gestures()[0]); // new CircleGesture();
+                            //Leap.Vector cCenter = leapToWorld(theCircle.Center, iBox);
+
+                            cylinder.transform.parent = spawnAnchor.transform;
+                            //float cCenterX = Mathf.Round(cCenter.x);
+                            //Debug.Log("cCenterX = " + cCenterX);
+                            //float cCenterY = Mathf.Round(cCenter.y);
+                            //Debug.Log("cCenterY = " + cCenterY);
+                            //float cCenterZ = Mathf.Round(cCenter.z);
+                            //Debug.Log("cCenterZ = " + cCenterZ);
+
+                            cylinder.transform.localScale = new Vector3(1, 1, 1);
+                            cylinder.transform.localPosition = new Vector3(0, 0.5f, 0);
+                            cylinder.AddComponent<GrabbableObject>();
+                            cylinder.AddComponent<Rigidbody>();
+                            cylinder.rigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                            cylinder.transform.renderer.material.color = new Color32(spawnObject.red, spawnObject.green, spawnObject.blue, 1);
+                            cylinder.transform.parent = null;
+                        }
                     }
                     break;
                 }
-                case(Gesture.GestureType.TYPE_SWIPE):
+                case(Gesture.GestureType.TYPE_SWIPE): //Bring up UI
                 {
-                    //Debug.Log("Did the swipe gesture swipe?");
                     if (gesture.State == Gesture.GestureState.STATE_STOP)
                     {
-
-                      
-                        Debug.Log("Did the swipe gesture swipe?");
                         if (UICanvas.activeSelf)
                         { 
                             UICanvas.SetActive(false);
@@ -90,8 +114,6 @@ class SpawningHand : HandController
                     }
                     break;
                 }
-
-            
                 default:
                 {
                     break;

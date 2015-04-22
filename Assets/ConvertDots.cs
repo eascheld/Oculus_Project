@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
+/* This script converts the location of the slider to an integer between 0 and 255 */
 public class ConvertDots : MonoBehaviour {
     public Text dotValue;
     public Text convertedDotValue;

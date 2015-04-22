@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using LMWidgets;
 
@@ -6,9 +7,12 @@ public class ButtonDemoToggle : ButtonToggleBase
 {
   public ButtonDemoGraphics onGraphics;
   public ButtonDemoGraphics offGraphics;
-  public GameObject UICanvas;
   public ButtonDemoGraphics midGraphics;
   public ButtonDemoGraphics botGraphics;
+  //Aftermarket additions
+  public GameObject UICanvas;
+  public Text buttonPressed;
+  public Text shapeChosen;
   
   public Color MidGraphicsOnColor = new Color(0.0f, 0.5f, 0.5f, 1.0f);
   public Color BotGraphicsOnColor = new Color(0.0f, 1.0f, 1.0f, 1.0f);
@@ -30,9 +34,25 @@ public class ButtonDemoToggle : ButtonToggleBase
   {
       onGraphics.SetActive(true);
       offGraphics.SetActive(false);
-      UICanvas.SetActive(false);
       midGraphics.SetColor(MidGraphicsOnColor);
       botGraphics.SetColor(BotGraphicsOnColor);
+      //Aftermarket Additions
+      if (buttonPressed.text == "off")
+      {
+          UICanvas.SetActive(false);
+      }
+      else if (buttonPressed.text == "cylinder")
+      {
+          shapeChosen.text = "cylinder";
+      }
+      else if (buttonPressed.text == "cube")
+      {
+          shapeChosen.text = "cube";
+      }
+      else
+      {
+          Debug.Log("Button Press Failure!");
+      }
   }
 
   private void TurnsOffGraphics()
